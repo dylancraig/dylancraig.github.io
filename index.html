@@ -53,7 +53,6 @@
         </p>
         <p class="links">
           <a class="btn" href="/assets/Red_Tape_Empty_Plates_Report.pdf" target="_blank" rel="noopener">View Technical Report</a>
-          <!-- uses central URL map; hidden unless URL is provided -->
           <a class="btn btn--light" data-url="kypolicy-rtp" style="display:none" target="_blank" rel="noopener">Read KyPolicy Article</a>
           <a class="btn btn--light" href="https://github.com/dylancraig/KY-SNAP-ABAWD-Waivers" target="_blank" rel="noopener">View Code on GitHub</a>
         </p>
@@ -89,40 +88,62 @@
         </p>
       </section>
 
+      <!-- =========================
+           Education (from resume)
+           ========================= -->
       <h2 id="education">Education</h2>
-      <h3>Frank Batten School of Leadership &amp; Public Policy at the University of Virginia (May 2025)</h3>
-      <ul><li>Master of Public Policy</li></ul>
 
-      <h3>William &amp; Mary (May 2023)</h3>
-      <ul><li>Bachelor of Arts, Government, <em>cum laude</em></li></ul>
+      <h3>Frank Batten School of Leadership &amp; Public Policy, University of Virginia — Master of Public Policy (May 2025)</h3>
+      <ul>
+        <li><strong>Relevant coursework:</strong> Research Methods and Data Analysis I &amp; II; Economics of Public Policy I &amp; II; Data Management in Social Science Research; Advanced Topics in Impact Evaluation; Applied Policy Project I &amp; II.</li>
+      </ul>
 
+      <h3>William &amp; Mary — B.A., Government (May 2023)</h3>
+
+      <!-- =========================
+           Work Experience (from resume)
+           ========================= -->
       <h2 id="experience">Work Experience</h2>
 
-      <h3>Graduate Research Assistant | University of Virginia (Jan 2024 – Aug 2025)</h3>
+      <h3>Graduate Research Assistant — University of Virginia (Jan 2024 – Aug 2025)</h3>
       <ul>
         <li>Collected, cleaned, and analyzed large-scale datasets using R, Stata, and Python, producing quantitative findings.</li>
+        <li>Drafted preliminary research, data cleaning, and data analysis memos to facilitate empirical research design.</li>
         <li>Collaborated with authors evaluating social programs, focusing on participation and welfare policy effectiveness.</li>
       </ul>
 
-      <h3>Graduate Intern | Buchanan County Industrial Development Authority (Aug 2024 – May 2025)</h3>
+      <h3>Graduate Intern — Buchanan County Industrial Development Authority (Aug 2024 – May 2025)</h3>
       <ul>
         <li>Analyzed labor and population data using R; presented findings to inform county economic strategy.</li>
-        <li>Researched housing grants and secured a $100,000 infrastructure grant to support housing development.</li>
+        <li>Researched housing grants; secured a $100,000 infrastructure grant to support housing development.</li>
+        <li>Drafted research memos to promote county development and attract business opportunities effectively.</li>
       </ul>
 
-      <h3>Graduate Research Assistant | Darden School of Business (June 2023 – May 2024)</h3>
+      <h3>Graduate Research Assistant — Darden School of Business (June 2023 – May 2024)</h3>
       <ul>
         <li>Drafted reviews of academic literature on entrepreneurship, executive decision-making, and market structures.</li>
+        <li>Cleaned publicly available data and information on companies, individuals, and other entities for faculty research.</li>
+        <li>Conducted qualitative coding and analysis for various research projects supporting faculty-led studies.</li>
       </ul>
 
-      <h3>Lead Session Intern | Office of Delegate Michael P. Mullin (May 2022 – May 2023)</h3>
+      <h3>Lead Session Intern — Office of Delegate Michael P. Mullin (May 2022 – May 2023)</h3>
       <ul>
-        <li>Conducted legislative research on taxation, criminal justice, and energy, drafting memos and talking points.</li>
+        <li>Managed office correspondence and legislative tracking using state databases to support the legislative agenda.</li>
+        <li>Conducted legislative research on taxation, criminal justice, and energy; drafted memos and talking points.</li>
+        <li>Coordinated scheduling, attended committee meetings, and provided legislative support as needed.</li>
+      </ul>
+
+      <h3>Research Assistant — William &amp; Mary Public Policy Department (Sep 2022 – Dec 2022)</h3>
+      <ul>
+        <li>Reviewed and synthesized academic literature on resilient and sustainable coastal communities.</li>
+        <li>Conducted stakeholder analysis and prepared insights on policy recommendations and outcomes.</li>
+        <li>Supported authors in developing materials and presenting findings to the client, Virginia Sea Grant.</li>
       </ul>
 
       <h2 id="skills">Skills</h2>
       <p><strong>Technical Tools:</strong> Stata, R, Python, SPSS, Tableau, Zotero, Microsoft Office, Google Workspace.</p>
-      <p><strong>Research:</strong> Quantitative analysis, causal inference, data cleaning, data visualization, literature reviews, policy memos.</p>
+      <p><strong>Research:</strong> Quantitative analysis, causal inference, data cleaning, data visualization, literature reviews.</p>
+      <p><strong>Communication:</strong> Policy memos, presentation development, stakeholder engagement and collaboration.</p>
 
       <footer class="footer">
         <p>&copy; <span id="y"></span> Dylan Craig</p>
@@ -142,9 +163,9 @@
       const url = URLS[key];
       if (url) {
         a.setAttribute('href', url);
-        a.style.display = 'inline-block'; // show when URL exists
+        a.style.display = 'inline-block';
       } else {
-        a.remove(); // hide/remove button if URL not provided
+        a.remove();
       }
     });
 

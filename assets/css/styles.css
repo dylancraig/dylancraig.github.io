@@ -17,8 +17,8 @@ a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;text-d
 a:hover{color:var(--accent-900);text-decoration-color:currentColor;}
 
 h1,h2,h3{margin:0 0 .4rem;letter-spacing:.2px;}
+/* page top h1 removed in HTML; keep base style for any inner h1s */
 h1{font-size:2rem;line-height:1.2;color:#2b2b2b;}
-.subtitle{margin-top:-.25rem;color:var(--muted);font-weight:600;}
 h2{font-size:1.7rem;color:var(--accent);margin:2rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid var(--border);}
 h3{font-size:1.3rem;color:var(--accent);margin:1.4rem 0 .25rem;}
 
@@ -41,24 +41,40 @@ p{margin:0 0 .8rem;}
 /* ====== sidebar ====== */
 .sidebar{position:relative;}
 .avatar{
-  width:288px;  /* 3x bigger (was 96px) */
+  width:288px;  /* large photo */
   height:288px;
   display:block;
   border-radius:8px;
   object-fit:cover;
   box-shadow:0 0 0 3px #fff,0 0 0 4px rgba(30,107,184,.25);
 }
-.name{font-size:1.2rem;margin:.6rem 0 .2rem;}
-.tagline{color:var(--muted);margin:0 0 .6rem;}
+.name{font-size:1.4rem;margin:.6rem 0 .2rem;}
+/* tagline removed entirely, so no .tagline rules */
+
+/* contact list: text snaps flush left with name/photo; icons hang in gutter */
 .contact{list-style:none;padding:0;margin:1rem 0 0;}
-.contact li{display:flex;gap:.6rem;align-items:center;margin:.35rem 0;color:#444;}
-.contact i{width:18px;text-align:center;color:#68707a;}
+.contact li{
+  position:relative;
+  margin:.45rem 0;
+  color:#444;
+}
+/* position the icon slightly into the left gutter so text aligns with column */
+.contact i{
+  position:absolute;
+  left:-26px;             /* hangs icon left; adjust to taste */
+  top:.2rem;
+  width:18px;
+  text-align:center;
+  color:#68707a;
+}
 .contact a{text-decoration:none;border-bottom:1px dotted rgba(30,107,184,.45);}
 .contact a:hover{border-bottom-color:currentColor;text-decoration:none;}
 
 /* scale photo down a bit on small screens */
 @media (max-width:900px){
   .avatar{width:180px;height:180px;}
+  /* keep icons visible but not cut off on small screens */
+  .contact i{left:-22px;}
 }
 
 /* ====== content ====== */
